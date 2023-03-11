@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/../assets/background0.jpg');
+    background-image: url('/../assets/background1.jpg');
     background-size: cover;
     filter: brightness(0.7);
     z-index: -1;
@@ -34,6 +34,12 @@
     font-size: 28px;
     margin-bottom: 20px;
   }
+
+  ion-input:focus {
+    font-size: 16px; /* Change the font size to what it should be */
+    zoom: 1; /* Reset the zoom */
+  }
+  
   
   ion-item {
     margin-bottom: 20px;

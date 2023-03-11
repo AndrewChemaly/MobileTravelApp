@@ -12,21 +12,22 @@
       <form>
         <ion-item>
           <ion-label position="floating">First name</ion-label>
-          <ion-input type="text" name="firstName" required></ion-input>
+          <ion-input type="text" name="firstName" [(ngModel)]="firstName" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Last name</ion-label>
-          <ion-input type="text" name="lastName" required></ion-input>
+          <ion-input type="text" name="lastName" [(ngModel)]="lastName" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Email</ion-label>
-          <ion-input type="email" name="email" required></ion-input>
+          <ion-input type="email" name="email" [(ngModel)]="email" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Password</ion-label>
-          <ion-input type="password" name="password" required></ion-input>
+          <ion-input type="password" name="password" [(ngModel)]="password" required></ion-input>
         </ion-item>
-        <ion-button expand="block" type="submit">Register</ion-button>
+        <ion-button expand="block" [disabled]="!firstName || !lastName || !email || !password" routerLink="/login" type="submit">Register</ion-button>
+        <ion-button expand="block" routerLink="/login">Already have an account? Sign in</ion-button>
       </form>
     </div>
   </div>

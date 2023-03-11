@@ -1,9 +1,9 @@
 ion-content {
-    --background: url('/../assets/background3.jpg') no-repeat center center fixed;
-
+    --background: url('/../assets/background4.jpg') no-repeat center center fixed;
 }
+
 ion-card-title {
-    background-color: darkblue;
+    background-color:brown;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -74,3 +74,10 @@ ion-card-content {
     font-weight: bold;
     margin-top: 8px;
 }
+
+// ion-image{
+//     height: 500px;
+//     width: 500px;
+//     object-fit: cover;
+// }
+
