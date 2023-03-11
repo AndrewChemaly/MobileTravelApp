@@ -1,61 +1,123 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Welcome to Travel App
-    </ion-title>
+    <ion-title>Travel App</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="hero">
-    <img src="assets/images/homepage-hero.jpg" alt="Homepage Hero Image" class="hero-image">
-    <div class="hero-text">
-      <h1>Plan your next adventure with us</h1>
-      <p>Get inspired with our travel guides and book your next trip with ease.</p>
-      <ion-button color="primary" expand="block" routerLink="/explore">Explore</ion-button>
-    </div>
-  </div>
+  <!-- <ion-slides pager="true" [options]="slideOpts" style="width: 100%">
+    <ion-slide>
+      <img src="assets/background0.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/background0.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/background0.jpg">
+    </ion-slide>
+  </ion-slides> -->
 
-  <ion-grid class="categories">
-    <ion-row>
-      <ion-col size="12" size-md="6">
-        <div class="category-card beach-card">
-          <h2>Beaches</h2>
-          <ion-icon name="sunny-outline"></ion-icon>
-        </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Categories</ion-card-title>
+    </ion-card-header>
+    <ion-row class="popular-destinations">
+      <ion-col size="6" size-md="3">
+        <ion-card class="ion-text-center">
+          <ion-img src="assets/italyBeach.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Beach</ion-card-title>
+          </ion-card-header>
+        </ion-card>
       </ion-col>
-      <ion-col size="12" size-md="6">
-        <div class="category-card mountain-card">
-          <h2>Mountains</h2>
-          <ion-icon name="partly-sunny-outline"></ion-icon>
-        </div>
+      <ion-col size="6" size-md="3">
+        <ion-card>
+          <ion-img src="assets/tokyoCity.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>City</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-md="3">
+        <ion-card>
+          <ion-img src="assets/batrounNature.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Nature</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" size-md="3">
+        <ion-card>
+          <ion-img src="assets/mountain.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Mountain</ion-card-title>
+          </ion-card-header>
+        </ion-card>
       </ion-col>
     </ion-row>
+  </ion-card>
+
+
+
+
+  <ion-grid>
     <ion-row>
-      <ion-col size="12" size-md="6">
-        <div class="category-card city-card">
-          <h2>Cities</h2>
-          <ion-icon name="business-outline"></ion-icon>
-        </div>
+      <ion-col size="6">
+        <ion-card class="trending-now">
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+              <ion-img src="assets/background0.jpg"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img src="assets/background0.jpg"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img src="assets/background0.jpg"></ion-img>
+            </ion-slide>
+          </ion-slides>
+          <ion-card-header>
+            <ion-card-title>Popular Destinations</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Explore the latest travel trends and hotspots.
+          </ion-card-content>
+        </ion-card>
       </ion-col>
-      <ion-col size="12" size-md="6">
-        <div class="category-card nature-card">
-          <h2>Nature</h2>
-          <ion-icon name="leaf-outline"></ion-icon>
-        </div>
+      <ion-col size="6">
+        <ion-card class="trending-now">
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+              <ion-img src="assets/background0.jpg"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img src="assets/background0.jpg"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img src="assets/background0.jpg"></ion-img>
+            </ion-slide>
+          </ion-slides>
+          <ion-card-header>
+            <ion-card-title>Trending Now</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Explore the latest travel trends and hotspots.
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <!-- <div class="popular-destinations">
-    <h2>Popular Destinations</h2>
-    <ion-card class="destination-card" *ngFor="let destination of popularDestinations">
-      <img src="{{ destination.image }}" alt="{{ destination.name }}" class="destination-image">
-      <div class="destination-text">
-        <h3>{{ destination.name }}</h3>
-        <p>{{ destination.description }}</p>
-        <ion-button color="primary" expand="block" routerLink="/destination/{{ destination.id }}">Learn More</ion-button>
-      </div>
-    </ion-card>
-  </div> -->
+
+
+
+<!-- 
+  <ion-card>
+    <img src="https://placeimg.com/640/480/tech">
+    <ion-card-header>
+      <ion-card-title>Deals of the Day</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Find the best travel deals and discounts for your next trip.
+    </ion-card-content>
+  </ion-card> -->
 </ion-content>

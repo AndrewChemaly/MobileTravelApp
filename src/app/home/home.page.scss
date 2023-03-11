@@ -1,69 +1,76 @@
-.hero {
-  position: relative;
+ion-content {
+    --background: url('/../assets/background3.jpg') no-repeat center center fixed;
+
+}
+ion-card-title {
+    background-color: darkblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+
+ion-slides {
+    height: 100%;
+    width: 100%;
 }
 
-.hero-image {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
+ion-card {
+    margin-top: 16px;
+    background-color: white;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
+ion-card img {
+    height: 180px;
+    object-fit: cover;
 }
 
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+ion-card-title {
+    font-weight: bold;
+    color: white;
 }
 
-.hero-text p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+ion-card-content {
+    font-size: 14px;
 }
 
-.categories {
-  margin-top: 2rem;
+.popular-destinations ion-card {
+    margin-right: 0;
 }
 
-.category-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  cursor: pointer;
+.popular-destinations ion-card:last-child {
+    margin-right: 0;
 }
 
-.category-card:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
+.popular-destinations ion-img {
+    height: 200px;
+    object-fit: cover;
 }
 
-.category-card img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.popular-destinations ion-col {
+    margin: 0;
 }
 
-.category-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
+.popular-destinations ion-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
 }
 
-.category-card p {
-  font-size: 16px;
-  margin: 10px 0 0;
+.popular-destinations ion-card-header {
+    padding: 0;
+}
+
+.popular-destinations ion-card-header ion-card-subtitle {
+    color: var(--ion-color-medium-tint);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.popular-destinations ion-card-header ion-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
 }
