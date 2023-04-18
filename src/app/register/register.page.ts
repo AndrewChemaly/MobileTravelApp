@@ -12,10 +12,13 @@ export class RegisterPage implements OnInit {
   email: string | undefined;
   password: string | undefined;
 
+  
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }
